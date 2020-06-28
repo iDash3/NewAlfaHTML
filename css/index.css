@@ -1,0 +1,18 @@
+#main-container {
+  color: white;
+  background-image: linear-gradient(-50deg, #2863a7, #0c3059);
+}
+#main-title h1 {
+  font-size: 40pt;
+}
+#header button {
+  background-color: #529df2;
+}
+
+/* Secondary container */
+#secondary-container {
+  background-color: #f3f4f8;
+}
+.white-square {
+  background-color: white;
+}

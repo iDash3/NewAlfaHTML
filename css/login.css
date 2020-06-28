@@ -1,0 +1,58 @@
+/* Wrapper take entire screen */
+#main-wrapper {
+  height: 100vh;
+}
+#right-section {
+  color: #f3f4f8;
+  background: url("../img/login.jpg") center no-repeat;
+  background-size: cover;
+  /* display: flex; */
+}
+
+/* Left section */
+#left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#left-section h3 {
+  font-size: 30pt;
+  color: #2863a7;
+}
+
+/* Login Form */
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-form input {
+  width: 390px;
+  height: 69px;
+  border: solid #f3f4f8;
+  border-radius: 10px;
+  box-shadow: 10px 10px 9px #c1c9d2;
+  margin-bottom: 10px;
+}
+.input-form input::placeholder {
+  padding-left: 5%;
+  font-size: 15pt;
+}
+#login-form button {
+  background-image: linear-gradient(#529df2, #2863a7);
+  font-size: 18pt;
+  width: 150px;
+  border-radius: 10px;
+  height: 60px;
+}
+#btn-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  #login-form input {
+    width: 300px;
+  }
+}
