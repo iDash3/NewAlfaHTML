@@ -34,10 +34,13 @@
   border-radius: 10px;
   box-shadow: 10px 10px 9px #c1c9d2;
   margin-bottom: 10px;
+  text-indent: 20px;
 }
 .input-form input::placeholder {
-  padding-left: 5%;
   font-size: 15pt;
+}
+.input-form input:focus {
+  outline-color: #bfc7d0;
 }
 #login-form button {
   background-image: linear-gradient(#529df2, #2863a7);
@@ -49,6 +52,7 @@
 #btn-container {
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
