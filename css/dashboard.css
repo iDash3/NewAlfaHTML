@@ -1,0 +1,42 @@
+html,body{
+  height: 100%;
+  margin: 0:
+}
+/* BG color */
+body {
+  background-color: #f3f4f8;
+}
+
+/* Navbar */
+nav {
+  background-color: white;
+}
+
+/* Sidebar */
+#sidebar-container {
+  display: flex;
+  flex-direction: row;
+  /* height: 100vh; */
+}
+#sidebar {
+  width: 18%;
+}
+#sidebar-navigation {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#sidebar-navigation span{
+  font-size: 15pt;
+}
+.sidebar-square{
+  background-color: #bbdefb;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+.square-active{
+  background-color: #2196f3;
+}

@@ -15,18 +15,100 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashboard.css" />
 
     <title>Alfa: Dashboard</title>
   </head>
   <body>
     <!-- Navbar -->
-    <div class="navbar">
-      Navbar
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="" alt="" />
+        Alfa
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Acciones
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              ?
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Account</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- Sidebar -->
-    <div class="sidebar">
-      Sidebar
+    <div id="sidebar-container">
+      <section id="sidebar">
+        <!-- Special button -->
+        <div id="sidebar-one">
+          Something
+        </div>
+        <!-- Sidebar: Navigation Links -->
+        <div id="sidebar-navigation" class="m-3 p-3 d-flex flex-row">
+          <div>
+            <div class="sidebar-item d-flex mb-2">
+              <div class="sidebar-square square-active mr-sm-2 mr-md-4"></div>
+              <span>
+                Inicio
+              </span>
+            </div>
+            <div class="sidebar-item d-flex mb-2">
+              <div class="sidebar-square mr-sm-2 mr-md-4"></div>
+              <span>
+                Servicios
+              </span>
+            </div>
+            <div class="sidebar-item d-flex mb-2">
+              <div class="sidebar-square mr-sm-2 mr-md-4"></div>
+              <span>
+                Análisis
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content in the rest of the page -->
+      <section id="content">
+        Acutal content
+      </section>
     </div>
 
     <!-- Optional JavaScript -->
