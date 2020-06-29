@@ -1,0 +1,21 @@
+/* Content */
+/* Welcome sign */
+#left-square {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #2863a7;
+  border-radius: 10px;
+  color: white;
+}
+#right-square {
+  height: 150px;
+  background-color: #2a4563;
+  border-radius: 10px;
+}
+
+.widget {
+  background-color: white;
+}
