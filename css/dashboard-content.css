@@ -46,9 +46,8 @@
   border-color: white;
 }
 /* Widget: Announcements */
-#announcements-visualizer {
-  height: 50px;
-  width: 50px;
+#ann-visualizer {
+  max-height: 300px;
 }
 
 /* Dynamic changes */
