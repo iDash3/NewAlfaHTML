@@ -12,4 +12,7 @@ var data_viz_chart = new Chart($data_viz, {
       },
     ],
   },
+  options: {
+    responsive: true,
+  },
 });
