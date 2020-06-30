@@ -22,15 +22,29 @@
     />
     <!-- Custom CSS: Base -->
     <link rel="stylesheet" href="css/dashboard.css" />
+
+    <!--  -->
+    <!--  -->
     <!-- Custom CSS: Content -->
     <link rel="stylesheet" href="css/services.css" />
+    <!--  -->
+    <!--  -->
+    <!--  -->
 
-    <title>Alfa: Services</title>
+    <!--  -->
+    <!--  -->
+    <!-- Custom name -->
+    <title>
+      Alfa: Services
+    </title>
+    <!--  -->
+    <!--  -->
+    <!--  -->
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="dashboard.html">
         Alfa
       </a>
       <button
@@ -81,9 +95,9 @@
       </div>
     </nav>
 
-    <div id="main-container">
+    <div class="row m-0">
       <!-- Sidebar -->
-      <div id="sidebar">
+      <section id="sidebar" class="col-12 col-sm-4 col-md-2 p-0">
         <!-- Special button -->
         <div id="sidebar-one" class="m-3 p-3">
           Something
@@ -92,15 +106,14 @@
         <div id="sidebar-navigation" class="m-3 p-3 d-flex flex-row">
           <div>
             <div class="sidebar-item d-flex align-items-center mb-3">
-              <div class="sidebar-square mr-sm-2 mr-md-4"></div>
-              <a href="inicio.html" class="link-active">
+              <div class="sidebar-square square-active mr-sm-2 mr-md-4"></div>
+              <a href="dashboard.html">
                 Inicio
               </a>
             </div>
             <div class="sidebar-item d-flex align-items-center mb-3">
-              <!-- Change active item -->
-              <div class="sidebar-square mr-sm-2 mr-md-4 square-active"></div>
-              <a href="servicios.html">
+              <div class="sidebar-square mr-sm-2 mr-md-4"></div>
+              <a href="services.html">
                 Servicios
               </a>
             </div>
@@ -112,16 +125,21 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Content in the rest of the page -->
-      <section id="content" class="d-flex flex-grow-1">
+      <section
+        id="content"
+        class="col-12 col-sm-8 col-md-10 d-flex flex-grow-1 p-0"
+      >
         <!--  -->
         <!-- Actual content -->
         <!--  -->
 
         <div class="container mt-3">
+          <!-- Services container -->
           <div class="row">
+            <!-- Main services -->
             <div class="col-6 col-md-3">
               <a href="data-visualization.html" class="main-service">
                 <div id="service-one">
@@ -150,8 +168,10 @@
                 </div>
               </a>
             </div>
+
+            <!-- All services -->
             <div class="col-12">
-              <div id="services-all" class="text-center mt-3">
+              <div id="services-all" class="text-center mt-3 p-1">
                 <h3>Servicios</h3>
                 <div id="services-container" class="">
                   <div>
@@ -183,18 +203,26 @@
         <!--  -->
       </section>
     </div>
-    <
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- JQuery -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
+    <!-- Bootstrap -->
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+
+    <!--  -->
+    <!--  -->
+    <!-- Custom JS -->
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
   </body>
 </html>

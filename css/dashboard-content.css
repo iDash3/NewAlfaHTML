@@ -12,8 +12,12 @@
 }
 #right-square {
   height: 150px;
+  display: flex;
+  justify-content: center;
+
   background-color: #2a4563;
   border-radius: 10px;
+  color: white;
 }
 
 /* Widgets */
@@ -49,7 +53,4 @@
 
 /* Dynamic changes */
 @media (max-width: 576px) {
-  .widget-body{
-    max-width: 200px;
-  }
 }`
