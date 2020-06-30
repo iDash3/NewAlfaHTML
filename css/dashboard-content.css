@@ -16,6 +16,23 @@
   border-radius: 10px;
 }
 
+/* Widgets */
 .widget {
   background-color: white;
+  box-shadow: 5px 5px 5px #c1c9d2;
+  border-radius: 10px;
+  padding: 15px;
+}
+/* Widget: Data Visualizer */
+#data-visualizer {
+  height: 250px;
+}
+/* Widget: Announcements */
+#announcements-visualizer {
+  height: 200px;
+}
+.btn-widget {
+  font-size: 15pt;
+  width: 150px;
+  background-color: #ed5152;
 }

@@ -31,7 +31,6 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#">
-        <img src="" alt="" />
         Alfa
       </a>
       <button
@@ -82,9 +81,9 @@
       </div>
     </nav>
 
-    <!-- Sidebar -->
-    <div id="sidebar-container">
-      <section id="sidebar">
+    <div id="main-container">
+      <!-- Sidebar -->
+      <div id="sidebar">
         <!-- Special button -->
         <div id="sidebar-one" class="m-3 p-3">
           Something
@@ -112,7 +111,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <!-- Content in the rest of the page -->
       <section id="content" class="d-flex flex-grow-1">
@@ -125,25 +124,46 @@
             <!-- Welcome sign -->
             <div class="col-12 col-md-7 mb-3">
               <div id="left-square">
-              <h1>
-                Bienvenido
-              </h1>
+                <h1>
+                  Bienvenido
+                </h1>
+              </div>
             </div>
-          </div>
-          <!-- idk -->
-          <div class="col-12 col-md-5 mb-3">
-            <div id="right-square" >
-              IDK yet
+            <!-- idk -->
+            <div class="col-12 col-md-5 mb-3">
+              <div id="right-square">
+                IDK yet
+              </div>
             </div>
-          </div>
-          <!-- Sell history -->
-          <div class="col-12 col-md-8">
-            <div class="widget">
-              Historial de ventas
+            <!-- Sell history -->
+            <div class="col-12 col-md-8 mb-3">
+              <div class="widget">
+                <div id="data-container">
+                  <div class="ml-2">
+                    <h5>
+                      Historial de ventas
+                    </h5>
+                  </div>
+                  <div id="data-visualizer">
+                    <!--  -->
+                    <!--  -->
+                  </div>
+                  <div class="d-flex flex-row-reverse">
+                    <buttton class="btn btn-primary btn-widget">
+                      Ver más
+                    </buttton>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-md-4">
-            Importante
+            <!-- Announcements  -->
+            <div class="col-12 col-md-4">
+              <div class="widget">
+                <div id="announcements-visualizer">
+                  Importante
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -152,7 +172,7 @@
         <!--  -->
       </section>
     </div>
-
+    <
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
