@@ -20,8 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap"
       rel="stylesheet"
     />
-    <!-- Custom CSS -->
+    <!-- Custom CSS: Base -->
     <link rel="stylesheet" href="css/dashboard.css" />
+    <!-- Custom CSS: Content -->
+    <link rel="stylesheet" href="css/dashboard-content.css" />
 
     <title>Alfa: Dashboard</title>
   </head>
@@ -29,7 +31,6 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#">
-        <img src="" alt="" />
         Alfa
       </a>
       <button
@@ -80,9 +81,9 @@
       </div>
     </nav>
 
-    <!-- Sidebar -->
-    <div id="sidebar-container">
-      <section id="sidebar">
+    <div id="main-container">
+      <!-- Sidebar -->
+      <div id="sidebar">
         <!-- Special button -->
         <div id="sidebar-one" class="m-3 p-3">
           Something
@@ -92,7 +93,7 @@
           <div>
             <div class="sidebar-item d-flex align-items-center mb-3">
               <div class="sidebar-square square-active mr-sm-2 mr-md-4"></div>
-              <a href="inicio.html">
+              <a href="inicio.html" class="link-active">
                 Inicio
               </a>
             </div>
@@ -110,16 +111,20 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <!-- Content in the rest of the page -->
-      <section id="content" class="m-3 p-3">
+      <section id="content" class="d-flex flex-grow-1">
         <!--  -->
         <!-- Actual content -->
         <!--  -->
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
       </section>
     </div>
-
+    <
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
