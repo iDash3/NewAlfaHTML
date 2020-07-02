@@ -39,7 +39,7 @@ var data_viz_chart = new Chart($data_viz, {
 new Chart(ctx, {
   type: "pie",
   data: {
-    // labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+    labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
     datasets: [
       {
         label: "Population (millions)",
@@ -55,9 +55,9 @@ new Chart(ctx, {
     ],
   },
   options: {
-    // legend: {
-    //   display: false,
-    // },
+    legend: {
+      display: false,
+    },
     scales: {
       xAxes: [
         {

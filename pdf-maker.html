@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS: Base -->
+    <link rel="stylesheet" href="css/dashboard.css" />
+
+    <!--  -->
+    <!--  -->
+    <!-- Custom CSS: Content -->
+    <link rel="stylesheet" href="css/pdf-maker.css" />
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <!--  -->
+    <!--  -->
+    <!-- Custom name -->
+    <title>
+      Alfa: PDF
+    </title>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="dashboard.html">
+        Alfa
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Acciones
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Cuenta
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              Salir
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row m-0">
+      <!-- Sidebar -->
+      <section id="sidebar" class="col-12 col-sm-4 col-md-2 p-0">
+        <!-- Special button -->
+        <div id="sidebar-one" class="m-3 p-3">
+          Something
+        </div>
+        <!-- Sidebar: Navigation Links -->
+        <div id="sidebar-navigation" class="m-3 p-3 d-flex flex-row">
+          <!--  -->
+          <!-- Check for active element -->
+          <!--  -->
+          <div>
+            <div class="sidebar-item d-flex align-items-center mb-3">
+              <div class="sidebar-square square-active mr-sm-2 mr-md-4"></div>
+              <a href="dashboard.html">
+                Inicio
+              </a>
+            </div>
+            <div class="sidebar-item d-flex align-items-center mb-3">
+              <div class="sidebar-square mr-sm-2 mr-md-4"></div>
+              <a href="services.html">
+                Servicios
+              </a>
+            </div>
+            <div class="sidebar-item d-flex align-items-center">
+              <div class="sidebar-square mr-sm-2 mr-md-4"></div>
+              <a href="analysis.html">
+                Análisis
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content in the rest of the page -->
+      <section
+        id="content"
+        class="col-12 col-sm-8 col-md-10 d-flex flex-grow-1 p-0"
+      >
+        <!--  -->
+        <!-- Actual content -->
+        <!--  -->
+
+        <div id="pdf-container" class="container mt-3 rounded-shadow">
+          <div class="row">
+            <!-- Title -->
+            <div class="col-12 mt-2 mb-2">
+              <h2>
+                PDF
+              </h2>
+              <hr />
+            </div>
+            <div class="col-12">
+              <!-- Select: Template -->
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="selectTemplate">
+                    Tipo de documento
+                  </label>
+                </div>
+                <select
+                  class="custom-select"
+                  id="selectTemplate"
+                  onchange="handleSelect()"
+                >
+                  <option value="0" selected>Elegir...</option>
+                  <option value="1">Remisión</option>
+                  <option value="2">Otro</option>
+                  <option value="3">Otro</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Radio Group -->
+            <div class="col-12">
+              <div class="d-flex d-row justify-content-between">
+                <!-- Radio Group: Option 1 -->
+                <div class="custom-control custom-radio">
+                  <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="groupRadio1"
+                    name="groupRadio"
+                    value="radioRecent"
+                    disabled
+                  />
+                  <label class="custom-control-label" for="groupRadio1">
+                    Documentos Recientes
+                  </label>
+                </div>
+
+                <!-- Radio Group: Option 2 -->
+                <div class="custom-control custom-radio">
+                  <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="groupRadio2"
+                    name="groupRadio"
+                    value="radioSearch"
+                    disabled
+                  />
+                  <label class="custom-control-label" for="groupRadio2">
+                    Buscar Documento
+                  </label>
+                </div>
+
+                <!-- Radio Group: Option 3 -->
+                <div class="custom-control custom-radio">
+                  <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="groupRadio3"
+                    name="groupRadio"
+                    value="radioManual"
+                    checked
+                  />
+                  <label class="custom-control-label" for="groupRadio3">
+                    Datos Manuales
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Radio Group: Selection -->
+            <div class="col-12">
+              <div id="radio-container">
+                <!-- JS content -->
+                <!-- Container for Manual Input -->
+                <div id="radioManual-container" class="container mt-4 mb-3">
+                  <div class="row">
+                    <div class="col-12">
+                      <h5>
+                        Manual
+                      </h5>
+                    </div>
+                    <!--  -->
+                    <div class="col-12 col-md-6">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroup-0">
+                            Número de Remisión
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                        />
+                        <div class="input-group-append">
+                          <span class="input-group-text">
+                            *
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12 col-md-6">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span
+                            class="input-group-text"
+                            id="inputGroup-sizing-default"
+                          >
+                            Cliente
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                        />
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span
+                            class="input-group-text"
+                            id="inputGroup-sizing-default"
+                          >
+                            Tipo de servicio
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                        />
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span
+                            class="input-group-text"
+                            id="inputGroup-sizing-default"
+                          >
+                            Dirección de Origen
+                          </span>
+                        </div>
+                        <textarea
+                          class="form-control"
+                          aria-label="Sizing example input"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12 col-md-6">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span
+                            class="input-group-text"
+                            id="inputGroup-sizing-default"
+                          >
+                            Número 1
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                        />
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12 col-md-6">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span
+                            class="input-group-text"
+                            id="inputGroup-sizing-default"
+                          >
+                            Número 2
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                        />
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span
+                            class="input-group-text"
+                            id="inputGroup-sizing-default"
+                          >
+                            Entre calles
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                        />
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span
+                            class="input-group-text"
+                            id="inputGroup-sizing-default"
+                          >
+                            Referencia
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                        />
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span
+                            class="input-group-text"
+                            id="inputGroup-sizing-default"
+                          >
+                            Referencia
+                          </span>
+                        </div>
+                        <textarea
+                          class="form-control"
+                          aria-label="Sizing example input"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span
+                            class="input-group-text"
+                            id="inputGroup-sizing-default"
+                          >
+                            Unidades
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                        />
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span
+                            class="input-group-text"
+                            id="inputGroup-sizing-default"
+                          >
+                            Chofer
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                        />
+                      </div>
+                    </div>
+                    <!--  -->
+                  </div>
+
+                  <!--  -->
+                  <!-- PDF TEMPLATE -->
+                  <div class="d-none">
+                    <div id="pdfTemplate">
+                      <img src="http://placekitten.com/200/300" alt="" />
+                    </div>
+                  </div>
+                  <!--  -->
+                  <!--  -->
+                </div>
+
+                <!-- Container for Search Input -->
+                <div id="radioSearch-container">
+                  <div class="row">
+                    <div class="col-12">
+                      Search
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Container for Recent Input -->
+                <div id="radioRecent-container">
+                  <div class="row">
+                    <div class="col-12">
+                      Recent
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+      </section>
+    </div>
+
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  -->
+    <!--  -->
+    <!-- Popper JS for dropdown menu -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <!-- Bootstrap -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  -->
+    <!--  -->
+    <!-- jsPDF -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+      integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="js/pdf-maker.js"></script>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+  </body>
+</html>

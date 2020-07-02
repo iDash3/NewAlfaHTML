@@ -62,6 +62,12 @@ nav {
   }
 }
 
+/* Extra Classes */
+.rounded-shadow {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #c1c9d2;
+}
+
 /* Dynamic changes */
 @media (max-width: 768px) {
   #sidebar-one {
