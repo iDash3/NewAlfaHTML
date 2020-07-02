@@ -139,7 +139,7 @@
         <!-- Actual content -->
         <!--  -->
 
-        <div id="pdf-container" class="container mt-3 rounded-shadow">
+        <div id="pdf-container" class="container mt-3 mb-4 rounded-shadow">
           <div class="row">
             <!-- Title -->
             <div class="col-12 mt-2 mb-2">
@@ -163,7 +163,7 @@
                 >
                   <option value="0" selected>Elegir...</option>
                   <option value="1">Remisión</option>
-                  <option value="2">Otro</option>
+                  <option value="2">Gastos</option>
                   <option value="3">Otro</option>
                 </select>
               </div>
@@ -195,7 +195,6 @@
                     id="groupRadio2"
                     name="groupRadio"
                     value="radioSearch"
-                    disabled
                   />
                   <label class="custom-control-label" for="groupRadio2">
                     Buscar Documento
@@ -219,12 +218,13 @@
               </div>
             </div>
 
+            <!-- Radio Group -->
             <!-- Radio Group: Selection -->
             <div class="col-12">
               <div id="radio-container">
                 <!-- JS content -->
                 <!-- Container for Manual Input -->
-                <div id="radioManual-container" class="container mt-4 mb-3">
+                <div id="radioManual-container" class="container mt-4 mb-2">
                   <div class="row">
                     <div class="col-12">
                       <h5>
@@ -445,7 +445,81 @@
                   <!-- PDF TEMPLATE -->
                   <div class="d-none">
                     <div id="pdfTemplate">
-                      <img src="http://placekitten.com/200/300" alt="" />
+                      <img src="http://placekitten.com/500/200" alt="" />
+                      <div class="d-flex d-row justify-content-between">
+                        <div>
+                          <span>
+                            Número de Remisión:
+                          </span>
+                          <span>
+                            CE-2020-0001
+                          </span>
+                        </div>
+                        <div>
+                          <span>
+                            Fecha:
+                          </span>
+                          <span>
+                            Wednesday
+                          </span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center">
+                        Datos del servicio
+                      </div>
+                      <div>
+                        <div>
+                          <span>Cliente:</span>
+                          <span>Isaac Bautista Silva</span>
+                        </div>
+                        <div>
+                          <span>Tipo de servicio:</span>
+                          <span>Mudanza local</span>
+                        </div>
+                        <div>
+                          <span>Dirección de origen:</span>
+                          <span>Campos Eliseos No.231</span>
+                        </div>
+                        <div>
+                          <span>Teléfonos:</span>
+                          <span>55 1951 6982</span>
+                        </div>
+                        <br />
+                        <div>
+                          <span>Entre calles:</span>
+                          <span>La Fontaine y Calderón de la barca</span>
+                        </div>
+                        <div>
+                          <span>Referencia:</span>
+                          <span>A un edificio de la torre latino</span>
+                        </div>
+                        <div>
+                          <span>Destino:</span>
+                          <span>Aclano de Soldi</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center">
+                        Unidades y Equipo
+                      </div>
+                      <div>
+                        <div>
+                          <span>Unidad:</span>
+                          <span>Plataforma 1</span>
+                        </div>
+                        <br />
+                        <div>
+                          <span>Chofer:</span>
+                          <span>Valencia Medina Nicolás</span>
+                        </div>
+                        <div>
+                          <span>Equipo y Herramientas:</span>
+                          <span>Voladura y Herramientas de Uso Rudo</span>
+                        </div>
+                        <br />
+                        <div>
+                          <span>Personal Asignado:</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <!--  -->
@@ -453,23 +527,56 @@
                 </div>
 
                 <!-- Container for Search Input -->
-                <div id="radioSearch-container">
+                <div id="radioSearch-container" class="container mt-3">
                   <div class="row">
                     <div class="col-12">
-                      Search
+                      <h5>
+                        Search
+                      </h5>
+                    </div>
+                    <div class="col-12">
+                      <form class="form-inline">
+                        <input
+                          class="form-control mr-sm-2"
+                          type="search"
+                          placeholder="Search"
+                          aria-label="Search"
+                        />
+                        <button
+                          class="btn btn-outline-success my-2 my-sm-0"
+                          type="submit"
+                        >
+                          Search
+                        </button>
+                      </form>
                     </div>
                   </div>
                 </div>
 
                 <!-- Container for Recent Input -->
-                <div id="radioRecent-container">
+                <div id="radioRecent-container" class="container">
                   <div class="row">
                     <div class="col-12">
-                      Recent
+                      <h4>
+                        Recent
+                      </h4>
                     </div>
                   </div>
                 </div>
                 <!--  -->
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="col-12">
+              <div class="d-flex flex-row-reverse p-3">
+                <button
+                  class="btn btn-primary pt-2 pb-2 pr-4 pl-4"
+                  id="pdfExport"
+                  onclick="makeNewRemissionPdf()"
+                >
+                  Exportar
+                </button>
               </div>
             </div>
           </div>
