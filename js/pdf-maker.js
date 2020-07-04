@@ -90,6 +90,11 @@ $().ready(function () {
   });
 });
 
+// Select remission first
+let $radioManualContainer = $("#targetManualContainer");
+selectedTemplate = "remission";
+renderInputs($radioManualContainer);
+
 // Worst fucking JS function ive ever written, god bless
 function renderInputs(targetHTML) {
   // Iterate over the data structures
@@ -172,10 +177,6 @@ function renderInputs(targetHTML) {
   targetHTML.append(component.join(" "));
 }
 
-let $radioManualContainer = $("#targetManualContainer");
-selectedTemplate = "remission";
-renderInputs($radioManualContainer);
-
 // Shitty functions all around
 function getInputValues() {
   var inputData = $("#radioManual-container .form-control")
@@ -187,7 +188,7 @@ function getInputValues() {
 }
 
 // I literally copied the function from above
-// This is in fact disgusting
+// Disgusting
 function renderHTMLforPDF() {
   // Iterate over the data structures
   var typeOfData = undefined;

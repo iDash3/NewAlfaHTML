@@ -40,6 +40,14 @@
     <!--  -->
     <!--  -->
     <!--  -->
+
+    <!-- Necessary Js -->
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -104,30 +112,55 @@
         </div>
         <!-- Sidebar: Navigation Links -->
         <div id="sidebar-navigation" class="m-3 p-3 d-flex flex-row">
-          <!--  -->
-          <!-- Check for active element -->
-          <!--  -->
           <div>
             <div class="sidebar-item d-flex align-items-center mb-3">
-              <div class="sidebar-square square-active mr-sm-2 mr-md-4"></div>
+              <div
+                class="sidebar-square mr-sm-2 mr-md-4"
+                id="sidebarHome"
+              ></div>
               <a href="dashboard.html">
                 Inicio
               </a>
             </div>
             <div class="sidebar-item d-flex align-items-center mb-3">
-              <div class="sidebar-square mr-sm-2 mr-md-4"></div>
+              <div
+                class="sidebar-square mr-sm-2 mr-md-4"
+                id="sidebarServices"
+              ></div>
               <a href="services.html">
                 Servicios
               </a>
             </div>
             <div class="sidebar-item d-flex align-items-center">
-              <div class="sidebar-square mr-sm-2 mr-md-4"></div>
+              <div
+                class="sidebar-square mr-sm-2 mr-md-4"
+                id="sidebarAnalysis"
+              ></div>
               <a href="analysis.html">
                 Análisis
               </a>
             </div>
           </div>
         </div>
+        <!--  -->
+        <!-- Check for active element -->
+        <!--  -->
+        <script>
+          function sidebarSelected(no) {
+            if (no == 1) {
+              var selected = $("#sidebarHome");
+            } else if (no == 2) {
+              var selected = $("#sidebarServices");
+            } else if (no == 3) {
+              var selected = $("#sidebarAnalysis");
+            }
+            selected.addClass("square-active");
+          }
+          // sidebarSelected();
+        </script>
+        <!--  -->
+        <!--  -->
+        <!--  -->
       </section>
 
       <!-- Content in the rest of the page -->
@@ -145,12 +178,6 @@
       </section>
     </div>
 
-    <!-- JQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
     <!-- Bootstrap -->
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"

@@ -26,7 +26,8 @@
     <!--  -->
     <!--  -->
     <!-- Custom CSS: Content -->
-    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/data-visualization.css" />
+
     <!--  -->
     <!--  -->
     <!--  -->
@@ -35,13 +36,20 @@
     <!--  -->
     <!-- Custom name -->
     <title>
-      Alfa: Services
+      Alfa: Data Visualization
     </title>
     <!--  -->
     <!--  -->
     <!--  -->
   </head>
   <body>
+    <!-- Necessary JS -->
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="dashboard.html">
@@ -106,25 +114,44 @@
         <div id="sidebar-navigation" class="m-3 p-3 d-flex flex-row">
           <div>
             <div class="sidebar-item d-flex align-items-center mb-3">
-              <div class="sidebar-square square-active mr-sm-2 mr-md-4"></div>
+              <div
+                class="sidebar-square mr-sm-2 mr-md-4"
+                id="sidebarHome"
+              ></div>
               <a href="dashboard.html">
                 Inicio
               </a>
             </div>
             <div class="sidebar-item d-flex align-items-center mb-3">
-              <div class="sidebar-square mr-sm-2 mr-md-4"></div>
+              <div
+                class="sidebar-square mr-sm-2 mr-md-4"
+                id="sidebarServices"
+              ></div>
               <a href="services.html">
                 Servicios
               </a>
             </div>
             <div class="sidebar-item d-flex align-items-center">
-              <div class="sidebar-square mr-sm-2 mr-md-4"></div>
+              <div
+                class="sidebar-square mr-sm-2 mr-md-4"
+                id="sidebarAnalysis"
+              ></div>
               <a href="analysis.html">
                 Análisis
               </a>
             </div>
           </div>
         </div>
+        <!--  -->
+        <!-- Check for active element -->
+        <script>
+          let $home = $("#sidebarHome");
+          let $services = $("#sidebar-navigation #sidebarServices");
+          let $analysis = $("#sidebar-navigation #sidebarAnalysis");
+          $services.addClass("square-active");
+        </script>
+        <!--  -->
+        <!--  -->
       </section>
 
       <!-- Content in the rest of the page -->
@@ -135,64 +162,17 @@
         <!--  -->
         <!-- Actual content -->
         <!--  -->
-
-        <div class="container mt-3">
-          <!-- Services container -->
-          <div class="row">
-            <!-- Main services -->
-            <div class="col-6 col-md-3">
-              <a href="data-visualization.html" class="main-service">
-                <div id="service-one">
+        <div class="container">
+          <div id="datavis-container" class="p-3 mt-3 rounded-shadow">
+            <div class="row">
+              <div class="col-12">
+                <h4>
                   Visualización de Datos
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a href="pdf-maker.html" class="main-service">
-                <div id="service-two">
-                  PDF
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a href="task-manager.html" class="main-service">
-                <div id="service-three">
-                  Tareas
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-3">
-              <a href="data-entry.html" class="main-service">
-                <div id="service-four">
-                  Ingresar datos
-                </div>
-              </a>
-            </div>
-
-            <!-- All services -->
-            <div class="col-12">
-              <div id="services-all" class="text-center mt-3 p-1">
-                <h3>Servicios</h3>
-                <div id="services-container" class="">
-                  <div>
-                    <p><a href="">Servicio 1</a></p>
-                    <p><a href="">Servicio 2</a></p>
-                    <p><a href="">Servicio 3</a></p>
-                    <p><a href="">Servicio 4</a></p>
-                  </div>
-                  <div>
-                    <p><a href="">Servicio 5</a></p>
-                    <p><a href="">Servicio 6</a></p>
-                    <p><a href="">Servicio 7</a></p>
-                    <p><a href="">Servicio 8</a></p>
-                  </div>
-                  <div>
-                    <p><a href="">Servicio 9</a></p>
-                    <p><a href="">Servicio 10</a></p>
-                    <p><a href="">Servicio 11</a></p>
-                    <p><a href="">Servicio 12</a></p>
-                  </div>
-                </div>
+                </h4>
+                <hr />
+              </div>
+              <div class="col-12">
+                <canvas id="datavis-canvas"> </canvas>
               </div>
             </div>
           </div>
@@ -204,12 +184,6 @@
       </section>
     </div>
 
-    <!-- JQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
     <!-- Bootstrap -->
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
@@ -220,6 +194,13 @@
     <!--  -->
     <!--  -->
     <!-- Custom JS -->
+    <!-- JS: Char.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Specific JS -->
+    <script src="js/data-visualization.js"></script>
 
     <!--  -->
     <!--  -->
