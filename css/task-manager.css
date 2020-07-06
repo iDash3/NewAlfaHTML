@@ -1,0 +1,10 @@
+#task-container {
+  background-color: white;
+}
+
+.task-card:hover {
+  background-color: gray;
+}
+.task-title {
+  font-size: 20px;
+}
