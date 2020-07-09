@@ -7,7 +7,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -17,10 +16,10 @@
     />
     <!-- Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Custom CSS: Base -->
+    <!-- Base CSS-->
     <link rel="stylesheet" href="css/dashboard.css" />
 
     <!--  -->
@@ -31,190 +30,228 @@
     <!--  -->
     <!--  -->
 
-    <title>Alfa: Dashboard</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="dashboard.html">
-        Alfa
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!--  -->
+    <!--  -->
+    <!-- Custom name -->
+    <title>
+      Alfa: Dashboard
+    </title>
+    <!--  -->
+    <!--  -->
+    <!--  -->
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Acciones
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Cuenta
-            </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Salir
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="row m-0">
-      <!-- Sidebar -->
-      <section id="sidebar" class="col-12 col-sm-4 col-md-2 p-0">
-        <!-- Special button -->
-        <div id="sidebar-one" class="m-3 p-3">
-          Something
-        </div>
-        <!-- Sidebar: Navigation Links -->
-        <div id="sidebar-navigation" class="m-3 p-3 d-flex flex-row">
-          <div>
-            <div class="sidebar-item d-flex align-items-center mb-3">
-              <div class="sidebar-square square-active mr-sm-2 mr-md-4"></div>
-              <a href="dashboard.html">
-                Inicio
-              </a>
-            </div>
-            <div class="sidebar-item d-flex align-items-center mb-3">
-              <div class="sidebar-square mr-sm-2 mr-md-4"></div>
-              <a href="services.html">
-                Servicios
-              </a>
-            </div>
-            <div class="sidebar-item d-flex align-items-center">
-              <div class="sidebar-square mr-sm-2 mr-md-4"></div>
-              <a href="analysis.html">
-                Análisis
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Content in the rest of the page -->
-      <section
-        id="content"
-        class="col-12 col-sm-8 col-md-10 d-flex flex-grow-1 p-0"
-      >
-        <!--  -->
-        <!-- Actual content -->
-        <!--  -->
-
-        <div class="container mt-3">
-          <div class="row row-eq-height">
-            <!-- Welcome sign -->
-            <div class="col-12 col-md-7 mb-3">
-              <!-- First Notification Square -->
-              <div id="left-square">
-                <h1>
-                  Bienvenido
-                </h1>
-              </div>
-            </div>
-            <!-- Second Notification Square-->
-            <div class="col-12 col-md-5 mb-3">
-              <div id="right-square">
-                <h5 class="mt-2">
-                  Notifications
-                </h5>
-              </div>
-            </div>
-
-            <!-- Sell history -->
-            <div class="col-12 col-md-8 mb-3">
-              <div class="widget">
-                <div class="widget-title ml-2">
-                  Historial de ventas
-                </div>
-                <div class="widget-body">
-                  <canvas id="data-visualizer">
-                    <!--  -->
-                    <!--  -->
-
-                    <!--  -->
-                    <!--  -->
-                  </canvas>
-                </div>
-                <div class="widget-button">
-                  <buttton class="btn btn-primary btn-widget">
-                    Ver más
-                  </buttton>
-                </div>
-              </div>
-            </div>
-
-            <!-- Announcements  -->
-            <div class="col-12 col-md-4">
-              <div class="widget">
-                <div class="widget-title">
-                  Importante
-                </div>
-                <div class="widget-body">
-                  <canvas id="ann-visualizer" height="450px" width="800px">
-                    <!--  -->
-                    <!--  -->
-
-                    <!--  -->
-                    <!--  -->
-                  </canvas>
-                </div>
-                <div class="widget-button">
-                  <a href="data-visualizer.html">
-                    <button class="btn btn-primary btn-widget">
-                      Ver más
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--  -->
-        <!--  -->
-        <!--  -->
-      </section>
-    </div>
-
-    <!-- JQuery, Bootstrap -->
+    <!-- JQuery -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
+  </head>
+  <body>
+    <!-- Wrapper for the entire page -->
+    <div id="global-wrapper">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="dashboard.html">
+          Alfa
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="mr-1 nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  src="http://placekitten.com/60"
+                  alt="Usuario"
+                  width="30"
+                  height="30"
+                  class="rounded-circle"
+                />
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Cuenta</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="settings.html">
+                Ajustes
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                Salir
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Wrapper for sidebar and content -->
+      <div id="wrapper">
+        <div class="row m-0" style="width: 100%;">
+          <!-- Sidebar -->
+          <section id="sidebar" class="col-12 col-md-2">
+            <!-- Sidebar: Navigation Links -->
+            <div id="sidebar-navigation" class="mt-1 ml-1">
+              <div class="sidebar-header">
+                PRINCIPALES
+              </div>
+              <a href="dashboard.html" class="sidebar-item">
+                Inicio
+              </a>
+              <a href="services.html" class="sidebar-item">
+                Servicios
+              </a>
+              <a href="analysis.html" class="sidebar-item">
+                Análisis
+              </a>
+              <div class="sidebar-header">
+                VENTAS
+              </div>
+              <a href="sales-history.html" class="sidebar-item">Historial</a>
+            </div>
+          </section>
+
+          <!--  -->
+          <!-- Check for active element -->
+          <!--  -->
+          <script>
+            function sidebarSelected(no) {
+              let items = $("#sidebar .sidebar-item");
+              let selected = $(items[no - 1]);
+              selected.addClass("sidebar-item-active");
+            }
+            sidebarSelected(1);
+          </script>
+          <!--  -->
+          <!--  -->
+          <!--  -->
+
+          <!-- Content in the rest of the page -->
+          <section id="content" class="col-12 col-md-10 p-0">
+            <div class="d-flex justify-content-center mt-3">
+              <!-- Button to trigger side panel on mobile devices -->
+              <div
+                id="sidebar-button"
+                class="d-flex d-md-none justify-content-center align-items-center mt-1 mb-3"
+              >
+                Abrir Panel
+              </div>
+            </div>
+
+            <div class="container">
+              <!--  -->
+              <!-- Actual content -->
+              <!--  -->
+              <div class="row row-eq-height">
+                <!-- Welcome sign -->
+                <div class="col-12 col-md-7 mb-3">
+                  <!-- First Notification Square -->
+                  <div id="left-square">
+                    <h2>
+                      Bienvenido
+                    </h2>
+                  </div>
+                </div>
+                <!-- Second Notification Square-->
+                <div class="col-12 col-md-5 mb-3">
+                  <div id="right-square">
+                    <h5 class="mt-2">
+                      Notifications
+                    </h5>
+                  </div>
+                </div>
+
+                <!-- Sell history -->
+                <div class="col-12 col-md-8 mb-3">
+                  <div class="widget">
+                    <div class="widget-title ml-2">
+                      Historial de ventas
+                    </div>
+                    <div class="widget-body">
+                      <canvas id="data-visualizer">
+                        <!--  -->
+                        <!--  -->
+
+                        <!--  -->
+                        <!--  -->
+                      </canvas>
+                    </div>
+                    <div class="widget-button">
+                      <a href="sales-history.html">
+                        <buttton class="btn btn-primary btn-widget">
+                          Ver más
+                        </buttton>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Announcements  -->
+                <div class="col-12 col-md-4">
+                  <div class="widget">
+                    <div class="widget-title">
+                      Importante
+                    </div>
+                    <div class="widget-body">
+                      <canvas id="ann-visualizer">
+                        <!--  -->
+                        <!--  -->
+
+                        <!--  -->
+                        <!--  -->
+                      </canvas>
+                    </div>
+                    <div class="widget-button">
+                      <a href="data-visualization.html">
+                        <button class="btn btn-primary btn-widget">
+                          Ver más
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <!--  -->
+              <!--  -->
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap -->
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <!-- Base JS -->
+    <script src="js/dashboard.js"></script>
 
     <!--  -->
     <!--  -->

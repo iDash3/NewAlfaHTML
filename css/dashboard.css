@@ -15,6 +15,7 @@ body {
   display: flex;
   flex: 1 1 auto;
 }
+
 /* Navbar */
 nav {
   z-index: 1;
@@ -22,9 +23,6 @@ nav {
   box-shadow: rgba(67, 117, 151, 0.08) 0px 3px 7px 0px;
 }
 
-#content {
-  background-color: #f3f4f8;
-}
 /* Sidebar */
 #sidebar {
   background-color: white;
@@ -70,13 +68,15 @@ nav {
   filter: brightness(1.2);
 }
 
+/* Content Section */
+#content {
+  background-color: #f3f4f8;
+}
+
 /* Extra Classes */
 .rounded-shadow {
   border-radius: 10px;
   box-shadow: 5px 5px 5px #c1c9d2;
-}
-.toggled {
-  display: block;
 }
 
 /* Dynamic changes */

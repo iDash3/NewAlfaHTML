@@ -35,15 +35,15 @@
   display: flex;
   flex-direction: row-reverse;
 }
-/* Widget: Data Visualizer */
-#data-visualizer {
-  max-height: 300px;
-}
 .btn-widget {
   font-size: 15pt;
   width: 150px;
-  background-color: #efc064;
+  background-color: #03A9F4;
   border-color: white;
+}
+/* Widget: Data Visualizer */
+#data-visualizer {
+  max-height: 300px;
 }
 /* Widget: Announcements */
 #ann-visualizer {
