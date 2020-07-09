@@ -80,7 +80,7 @@ nav {
 }
 
 /* Dynamic changes */
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   #sidebar {
     display: none;
   }
