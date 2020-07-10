@@ -232,7 +232,9 @@ function renderHTMLforPDF() {
     }
   }
   var templateStart = `
-			<img src="http://placekitten.com/500/200" alt="" />
+      <img src="http://placekitten.com/500/200" alt="" />
+      <span>Código QR de la operación:</span>
+      <img src="img/qr.png"/>
 		`;
   component.unshift(templateStart);
   // targetHTML.append(component.join(" "));

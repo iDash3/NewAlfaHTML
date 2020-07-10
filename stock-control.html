@@ -25,7 +25,7 @@
     <!--  -->
     <!--  -->
     <!-- Custom CSS: Content -->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="css/stock-control.css" />
     <!--  -->
     <!--  -->
     <!--  -->
@@ -152,7 +152,7 @@
               let selected = $(items[no - 1]);
               selected.addClass("sidebar-item-active");
             }
-            sidebarSelected(1);
+            sidebarSelected(5);
           </script>
           <!--  -->
           <!--  -->
@@ -174,6 +174,72 @@
               <!--  -->
               <!-- Actual content -->
               <!--  -->
+
+              <div id="stock-control-container" class="p-3 rounded-shadow">
+                <div class="row">
+                  <div class="col-12">
+                    <h3>
+                      Control de Inventario
+                    </h3>
+                    <hr />
+                  </div>
+                  <div class="col-12">
+                    <button id="btn-add-object" class="btn btn-primary">
+                      Añadir objeto
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div id="stock-items-container" class="p-3">
+                <div class="row">
+                  <!-- Items -->
+                  <div class="col-6 col-md-3 m-2">
+                    <div class="row stock-item rounded-shadow">
+                      <div class="col-12 stock-header mb-2 mt-2">
+                        <h5>
+                          Cajas grandes
+                        </h5>
+                      </div>
+                      <div
+                        class="col-12 text-center d-flex flex-row justify-content-between m-1 mb-2"
+                      >
+                        <button class="btn btn-primary">
+                          -
+                        </button>
+                        <h4>
+                          10
+                        </h4>
+                        <button class="btn btn-primary">
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 m-2">
+                    <div class="row stock-item rounded-shadow">
+                      <div class="col-12 stock-header mb-2 mt-2">
+                        <h5>
+                          Cajas grandes
+                        </h5>
+                      </div>
+                      <div
+                        class="col-12 text-center d-flex flex-row justify-content-between m-1 mb-2"
+                      >
+                        <button class="btn btn-primary">
+                          -
+                        </button>
+                        <h4>
+                          10
+                        </h4>
+                        <button class="btn btn-primary">
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <!--  -->
               <!--  -->
